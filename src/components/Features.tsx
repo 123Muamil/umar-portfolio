@@ -144,7 +144,7 @@ const Features = () => {
             </div>
           </div>
           <div className="col-span-1 flex flex-col items-center justify-center">
-            <Image src={header_img} style={{ width: '100%', height: '450px', borderRadius: '10px', boxShadow: '0 0 10px red' }} alt="header_img" />
+            <Image src={header_img} style={{ width: '100%', height: '450px',objectFit:'cover', borderRadius: '10px', boxShadow: '0 0 10px red' }} alt="header_img" />
             <a
               
               className="bg-[#E22D51] mt-6 text-white px-4  cursor-pointer py-2 rounded-md hover:bg-[#67CDF0]"

@@ -13,7 +13,7 @@ const About = () => {
             <div className="container mx-auto px-4 pt-[80px] pb-[60px]">
                 <div className="grid px-10 grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="col-span-1 flex items-center justify-center">
-                       <Image src={header_img} style={{width:'100%',height:'450px',borderRadius:'10px',boxShadow: '0 0 10px red',}} alt='header_img'/>
+                       <Image src={header_img} style={{width:'100%',height:'450px',objectFit:'cover',borderRadius:'10px',boxShadow: '0 0 10px red',}} alt='header_img'/>
                     </div>
                     <div className="col-span-1 flex flex-col justify-center items-start text-start ">
                         <h1 className='text-[#E22D51] text-[25px] font-bold'>About IPTV UK Services</h1>
