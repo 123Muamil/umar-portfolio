@@ -39,7 +39,7 @@ const WhoWeAre = () => {
             className='w-full lg:w-[48%] h-full lg:h-[520px] mb-8 lg:mb-0'
             style={{objectFit:'cover',borderRadius:'10px',boxShadow: '0 0 10px red'}}
           />
-          <div className="flex flex-row lg:flex-col w-full lg:w-[48%]  ml-0 lg:ml-4">
+          <div className="flex flex-col lg:flex-col w-full lg:w-[48%]  ml-0 lg:ml-4">
             <Image
               src={who2}
               alt="Top"
