@@ -52,15 +52,15 @@ Place your order today and experience premium IPTV streaming like never before!
     </div>
   </div>
 </div>
-<div className="container mx-auto mt-[60px]  px-4 bg-[#040037] h-[200px] rounded-[10px]">
+<div className="container mx-auto mt-[60px]  px-4 py-6 bg-[#040037] h-auto lg:h-[200px] rounded-[10px]">
   <div className="flex flex-wrap h-full">
     <div className="w-full md:w-1/3 p-2 flex items-center justify-center">
-      <h1 className="text-[#FFFFFF] text-[30px] text-center font-bold">
+      <h1 className="text-[#FFFFFF] text-[30px] text-center text-justify font-bold">
         We are committed<br /> to giving our best<br /> services.
       </h1>
     </div>
     <div className="w-full md:w-1/3 p-2 flex items-center justify-center">
-      <p className="text-[#FFFFFF] text-[18px] text-center">
+      <p className="text-[#FFFFFF] text-[18px] text-center text-justify">
         We are dedicated to delivering the highest quality services, ensuring excellence, reliability, and customer satisfaction every step of the way.
       </p>
     </div>

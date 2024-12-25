@@ -13,7 +13,7 @@ const OurServices = () => {
   return (
     <div className='bg-[#221E5B]'>
             <div className="container mx-auto px-4 pt-[80px] pb-[60px]">
-                <div className="grid px-10 grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid lg:px-10 grid-cols-1 sm:grid-cols-2 gap-4">
                 
                     <div className="col-span-1 flex flex-col justify-center items-start text-start ">
                         <h1 className='text-[#E22D51] text-[25px] font-bold'><Link className='hover:text-[#67CDF0]' href='/'>IPTV</Link> UK Versatile services</h1>
@@ -54,7 +54,7 @@ const OurServices = () => {
       </div>
     </div>
                         <div className='flex gap-5 mt-4'>
-                            <button className="bg-[#E22D51] text-white px-10 py-3 rounded-[30px] cursor-pointer hover:bg-[#67CDF0]" onClick={WattsappOpen}>
+                            <button className="bg-[#E22D51] text-white mt-3 w-[200px] h-[50px] rounded-[30px] cursor-pointer hover:bg-[#67CDF0]" onClick={WattsappOpen}>
                             Join Today
                             </button>
                             <h1 className="text-white text-[20px] mt-2" onClick={WattsappOpen}>

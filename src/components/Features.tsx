@@ -58,7 +58,7 @@ const Features = () => {
   return (
     <div className="bg-[#040037]">
       <div className="container mx-auto px-4 pt-[60px] pb-[100px]">
-        <div className="grid px-10 grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid lg:px-10 grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="col-span-1 flex flex-col justify-center items-start text-start">
             <h1 className="text-[#FFFFFF] text-[25px] font-bold">
               Featured <Link href="/" className="hover:text-[#67CDF0]">Movies and TV Shows</Link>
@@ -147,8 +147,8 @@ const Features = () => {
             <Image src={header_img} style={{ width: '100%', height: '450px',objectFit:'cover', borderRadius: '10px', boxShadow: '0 0 10px red' }} alt="header_img" />
             <a
               
-              className="bg-[#E22D51] mt-6 text-white px-4  cursor-pointer py-2 rounded-md hover:bg-[#67CDF0]"
-              onClick={WattsappOpen}
+              className="bg-[#E22D51] mt-6 text-white w-full h-[60px] flex items-center justify-center cursor-pointer rounded-[30px] hover:bg-[#67CDF0]"
+          onClick={WattsappOpen}
             >
               Subscribe Today And Never Miss A Moment
             </a>

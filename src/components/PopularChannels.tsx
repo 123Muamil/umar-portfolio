@@ -194,7 +194,7 @@ const PopularChannels = () => {
   return (
     <div className="bg-[#040037] pb-[60px]">
   <div className="container mx-auto px-4 pt-[60px] pb-[100px]">
-    <div className="grid px-10 grid-cols-1 sm:grid-cols-2 gap-4">
+    <div className="grid lg:px-10 grid-cols-1 sm:grid-cols-2 gap-4">
       <div className="col-span-1 flex flex-col justify-center items-start text-start">
         <h1 className="text-[#FFFFFF] text-[25px] font-bold">
           Most Popular <Link href="/" className="hover:text-[#67CDF0]">TV Channels and Events</Link>
@@ -277,9 +277,9 @@ const PopularChannels = () => {
         </div>
       </div>
       <div className="col-span-1 flex flex-col items-center justify-center">
-        <Image src={header_img} style={{ width: '100%', height: '450px', borderRadius: '10px', boxShadow: '0 0 10px red' }} alt="header_img" />
+        <Image src={header_img} style={{ width: '100%', height: '450px',objectFit:'cover', borderRadius: '10px', boxShadow: '0 0 10px red' }} alt="header_img" />
         <a
-          className="bg-[#E22D51] mt-6 text-white px-4 cursor-pointer py-2 rounded-md hover:bg-[#67CDF0]"
+          className="bg-[#E22D51] mt-6 text-white w-full h-[60px] flex items-center justify-center cursor-pointer rounded-[30px] hover:bg-[#67CDF0]"
           onClick={WattsappOpen}
         >
           Join Now And Unlock Premium Content

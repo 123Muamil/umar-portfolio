@@ -10,7 +10,7 @@ const SubscriptionPlans = () => {
   return (
     <div className="container mx-auto  mt-[60px] pb-12 h-auto rounded-[10px]">
       <h1 className='text-[#FFFFFF] text-[35px] text-center font-bold pt-[60px]'>Choose a Subscription Plan</h1>
-      <div className="flex flex-wrap lg:mx-[150px] h-full">
+      <div className="flex flex-col items-center justify-center lg:mx-[150px] h-full">
         {/* Plan 1 */}
         <div className="w-full  md:w-1/3 mt-12">
           <div className="bg-[#040037] rounded-lg p-4 h-full flex flex-col justify-between w-[350px] " style={{boxShadow: '0 0 10px red'}}>
