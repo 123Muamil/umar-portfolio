@@ -1,9 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 import devices from '../../public/images/devices.png'
+import CompaniesCarousel from './CompaniesCarousel'
 const Devices = () => {
   return (
-    <div className='bg-[#040037]'>
+    <div className='bg-[#040037] pb-[60px]'>
     <div className="container mx-auto px-4 pt-[60px] pb-[60px]">
     <div className="flex flex-wrap">
       <div className="w-full  md:w-1/2">
@@ -22,12 +23,13 @@ const Devices = () => {
         </ul>
       </div>
       <div className="w-full flex flex-col items-center justify-center md:w-1/2">
-      <div className='bg-[#FFFFFF] flex items-center justify-center lg:w-[450px] lg:h-[450px] rounded-[10px]'>
+      <div className='bg-[#FFFFFF] mt-6 lg:mt-0 flex items-center justify-center lg:w-[450px] lg:h-[450px] rounded-[10px]'>
       <Image src={devices} style={{width:'100%' ,objectFit:'cover'}} alt='img'/>
       </div>
       </div>
     </div>
   </div>
+  <CompaniesCarousel/>
   </div>
   )
 }

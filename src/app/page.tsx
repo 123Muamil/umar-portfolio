@@ -9,6 +9,8 @@ import ChooseIPTVServices from '@/components/ChooseIPTVServices'
 import PopularChannels from '@/components/PopularChannels'
 import Subscription from '@/components/Subscription'
 import Devices from '@/components/Devices'
+import WhoWeAre from '@/components/WhoWeAre'
+import Testimonials from '@/components/Testimonials'
 const page = () => {
   return (
     <>
@@ -22,6 +24,8 @@ const page = () => {
      <PopularChannels/>
      <Subscription/>
     <Devices/>
+    <WhoWeAre/>
+    <Testimonials/>
     </>
   )
 }
