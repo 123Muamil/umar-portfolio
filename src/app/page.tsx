@@ -13,6 +13,8 @@ import WhoWeAre from '@/components/WhoWeAre'
 import Testimonials from '@/components/Testimonials'
 import ChatCarousel from '@/components/ChatCarousel'
 import ContactUS from '@/components/ContactUS'
+import Footer from '@/components/Footer'
+import Rights from '@/components/Rights'
 const page = () => {
   return (
     <>
@@ -30,6 +32,8 @@ const page = () => {
     <Testimonials/>
     <ChatCarousel/>
     <ContactUS/>
+    <Footer/>
+    <Rights/>
     </>
   )
 }

@@ -47,14 +47,14 @@ Get Satisfied with the services<br/>We provide A to Z in Streaming.
           </p>
           <div className="flex items-center gap-6 mt-6">
             {/* Left Side: WhatsApp Icon */}
-            <div className='bg-[#E22D51] w-[100px] h-[100px] rounded-[10px] flex items-center justify-center'>
+            <div className='bg-[#E22D51] w-[80px] h-[80px] rounded-[10px] flex items-center justify-center'>
             <FaWhatsapp size={50} className="text-[#FFFFFF] text-4xl" />
             </div>
             
             {/* Right Side: WhatsApp Info */}
             <div className="text-justify">
-              <p className='text-[#FFFFFF] text-[18px] lg:text-[25px]  font-bold'>WhatsApp for a quote today!</p>
-              <p className='text-[#FFFFFF] mt-2 text-[18px] lg:text-[25px]  font-bold'>+447826176784</p>
+              <p className='text-[#FFFFFF] text-[18px] lg:text-[25px] '>WhatsApp for a quote today!</p>
+              <p className='text-[#FFFFFF] mt-2 text-[18px] lg:text-[25px]  '>+447826176784</p>
             </div>
           </div>
         </div>
