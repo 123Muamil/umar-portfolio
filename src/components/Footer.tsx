@@ -72,7 +72,7 @@ const Footer = () => {
     </div>
     <div className="w-full sm:w-1/2 md:w-1/3 px-12 lg:px-4">
     <button className="bg-[#E22D51] text-white h-[50px] w-full mt-[70px] rounded-[5px] cursor-pointer hover:bg-[#67CDF0]" onClick={WattsappOpen}>
-     Here's Everything You Need
+     Here Everything You Need
     </button>
     <div className="flex flex-col space-y-3 mt-12">
       <div className="flex items-center space-x-3">
