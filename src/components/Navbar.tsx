@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import logo from '../../public/images/logo.png';
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -37,13 +39,13 @@ const Navbar = () => {
           </a>
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center text-[20px] space-x-4">
-            <a
-              href="#"
+            <Link
+              href="/"
               className={`${linkClass('home')}`}
               onClick={() => handleLinkClick('home')}
             >
               Home
-            </a>
+            </Link>
             {/* Plans Dropdown */}
             <div className="relative">
               <button
@@ -179,47 +181,54 @@ const Navbar = () => {
   </div>
 
   {/* Menu Items */}
-  <a
-    href="#"
-    className={`${linkClass('home')} text-[#333] text-[20px] font-bold py-4 hover:text-[#E32D51]`}
+  <Link
+    href="/"
+    className={`${linkClass('home')} text-[#565483] text-[20px] font-bold py-4 hover:text-[#E32D51]`}
     onClick={() => handleLinkClick('home')}
   >
     Home
-  </a>
+  </Link>
 
   {/* Plans Dropdown for Mobile */}
   <div className="relative">
-    <button
-      onClick={toggleDropdown}
-      className="block text-[#333] text-[20px] font-bold py-4 hover:text-blue-600"
-    >
-      Plans
-    </button>
-    {isDropdownOpen && (
-      <ul className="bg-white shadow-lg mt-2 rounded-md w-full">
-        <li>
-          <a
-            href="#"
-            className="block px-4 py-2 text-[#333] text-[20px] hover:bg-blue-600 hover:text-white"
-          >
-            Single Plan
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            className="block px-4 py-2 text-[#333] text-[20px] hover:bg-blue-600 hover:text-white"
-          >
-            Friends and Family Plan
-          </a>
-        </li>
-      </ul>
+  <button
+    onClick={toggleDropdown}
+    className="flex items-center justify-between text-[#565483] text-[20px] font-bold py-4 hover:text-[#E32D51] w-full"
+  >
+    <span>Plans</span> {/* "Plans" text */}
+    {/* Display the chevron icon */}
+    {isDropdownOpen ? (
+      <FaChevronUp className="ml-2 text-[#565483]" />
+    ) : (
+      <FaChevronDown className="ml-2 text-[#565483]" />
     )}
-  </div>
+  </button>
+  {isDropdownOpen && (
+    <ul className="mt-2  w-full">
+      <li>
+        <a
+          href="#"
+          className="block px-4 py-2 text-[#565483] text-[20px] font-bold hover:text-[#E32D51]"
+        >
+          Single Plan
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+          className="block px-4 py-2 text-[#565483] text-[20px] font-bold hover:text-[#E32D51]"
+        >
+          Friends and Family Plan
+        </a>
+      </li>
+    </ul>
+  )}
+</div>
+
 
   <a
     href="#"
-    className={`${linkClass('reseller')} text-[#333] text-[20px] font-bold font-bold py-4 hover:text-[#E32D51]`}
+    className={`${linkClass('reseller')} text-[#565483] text-[20px] font-bold font-bold py-4 hover:text-[#E32D51]`}
     onClick={() => handleLinkClick('reseller')}
   >
     Reseller
@@ -227,7 +236,7 @@ const Navbar = () => {
 
   <a
     href="#"
-    className={`${linkClass('guide')} text-[#333] text-[20px] font-bold font-bold py-4 hover:text-[#E32D51]`}
+    className={`${linkClass('guide')} text-[#565483] text-[20px] font-bold font-bold py-4 hover:text-[#E32D51]`}
     onClick={() => handleLinkClick('guide')}
   >
     Guide
@@ -235,7 +244,7 @@ const Navbar = () => {
 
   <a
     href="#"
-    className={`${linkClass('iptvs')} text-[#333] text-[20px] font-bold font-bold py-4 hover:text-[#E32D51]`}
+    className={`${linkClass('iptvs')} text-[#565483] text-[20px] font-bold font-bold py-4 hover:text-[#E32D51]`}
     onClick={() => handleLinkClick('iptvs')}
   >
     IPTVs
@@ -243,7 +252,7 @@ const Navbar = () => {
 
   <a
     href="#"
-    className={`${linkClass('about')} text-[#333] text-[20px] font-bold py-4 hover:text-[#E32D51]`}
+    className={`${linkClass('about')} text-[#565483] text-[20px] font-bold py-4 hover:text-[#E32D51]`}
     onClick={() => handleLinkClick('about')}
   >
     About
@@ -251,7 +260,7 @@ const Navbar = () => {
 
   <a
     href="#"
-    className={`${linkClass('contact')} text-[#333] text-[20px] font-bold py-4 hover:text-[#E32D51]`}
+    className={`${linkClass('contact')} text-[#565483] text-[20px] font-bold py-4 hover:text-[#E32D51]`}
     onClick={() => handleLinkClick('contact')}
   >
     Contact
@@ -259,14 +268,14 @@ const Navbar = () => {
 
   <a
     href="#"
-    className={`${linkClass('blogs')} text-[#333] text-[20px] font-bold py-4 hover:text-[#E32D51]`}
+    className={`${linkClass('blogs')} text-[#565483] text-[20px] font-bold py-4 hover:text-[#E32D51]`}
     onClick={() => handleLinkClick('blogs')}
   >
     Blogs
   </a>
 
   <a
-    className="block text-white bg-[#E22D51] px-4 py-2 cursor-pointer rounded-md hover:bg-[#67CDF0]"
+    className="block text-white mt-2 bg-[#E22D51] px-4 py-3 cursor-pointer rounded-md hover:bg-[#67CDF0]"
     onClick={WattsappOpen}
   >
     Get Subscription
