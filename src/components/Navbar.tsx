@@ -25,7 +25,7 @@ const Navbar = () => {
   const linkClass = (link: string) => {
     return activeLink === link
       ? 'text-[#E32D51]'
-      : 'text-[#FFFFFF] hover:text-[#5FBFDB]';
+      : 'text-[#565483]  hover:text-[#5FBFDB]';
   };
   const WattsappOpen = () => {
     window.open('https://wa.me/+447826176784', '_blank');
@@ -183,7 +183,7 @@ const Navbar = () => {
   {/* Menu Items */}
   <Link
     href="/"
-    className={`${linkClass('home')} text-[#565483] text-[20px] font-bold py-4 hover:text-[#E32D51]`}
+    className={`${linkClass('home')}  text-[20px] font-bold py-4 hover:text-[#E32D51]`}
     onClick={() => handleLinkClick('home')}
   >
     Home
@@ -193,7 +193,7 @@ const Navbar = () => {
   <div className="relative">
   <button
     onClick={toggleDropdown}
-    className="flex items-center justify-between text-[#565483] text-[20px] font-bold py-4 hover:text-[#E32D51] w-full"
+    className="flex items-center justify-between  text-[20px] font-bold py-4 hover:text-[#E32D51] w-full"
   >
     <span>Plans</span> {/* "Plans" text */}
     {/* Display the chevron icon */}
@@ -228,7 +228,7 @@ const Navbar = () => {
 
   <a
     href="#"
-    className={`${linkClass('reseller')} text-[#565483] text-[20px] font-bold font-bold py-4 hover:text-[#E32D51]`}
+    className={`${linkClass('reseller')}  text-[20px] font-bold font-bold py-4 hover:text-[#E32D51]`}
     onClick={() => handleLinkClick('reseller')}
   >
     Reseller
@@ -236,7 +236,7 @@ const Navbar = () => {
 
   <a
     href="#"
-    className={`${linkClass('guide')} text-[#565483] text-[20px] font-bold font-bold py-4 hover:text-[#E32D51]`}
+    className={`${linkClass('guide')}  text-[20px] font-bold font-bold py-4 hover:text-[#E32D51]`}
     onClick={() => handleLinkClick('guide')}
   >
     Guide
@@ -244,7 +244,7 @@ const Navbar = () => {
 
   <a
     href="#"
-    className={`${linkClass('iptvs')} text-[#565483] text-[20px] font-bold font-bold py-4 hover:text-[#E32D51]`}
+    className={`${linkClass('iptvs')}  text-[20px] font-bold font-bold py-4 hover:text-[#E32D51]`}
     onClick={() => handleLinkClick('iptvs')}
   >
     IPTVs
@@ -252,7 +252,7 @@ const Navbar = () => {
 
   <a
     href="#"
-    className={`${linkClass('about')} text-[#565483] text-[20px] font-bold py-4 hover:text-[#E32D51]`}
+    className={`${linkClass('about')}  text-[20px] font-bold py-4 hover:text-[#E32D51]`}
     onClick={() => handleLinkClick('about')}
   >
     About
@@ -260,7 +260,7 @@ const Navbar = () => {
 
   <a
     href="#"
-    className={`${linkClass('contact')} text-[#565483] text-[20px] font-bold py-4 hover:text-[#E32D51]`}
+    className={`${linkClass('contact')}  text-[20px] font-bold py-4 hover:text-[#E32D51]`}
     onClick={() => handleLinkClick('contact')}
   >
     Contact
@@ -268,7 +268,7 @@ const Navbar = () => {
 
   <a
     href="#"
-    className={`${linkClass('blogs')} text-[#565483] text-[20px] font-bold py-4 hover:text-[#E32D51]`}
+    className={`${linkClass('blogs')} text-[20px] font-bold py-4 hover:text-[#E32D51]`}
     onClick={() => handleLinkClick('blogs')}
   >
     Blogs
