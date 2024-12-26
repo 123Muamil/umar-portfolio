@@ -14,8 +14,8 @@ const Testimonials = () => {
   return (
     <div className='bg-[#040037] pt-[60px] pb-[60px]'>
       <div className="container mx-auto ">
-      <div className="flex flex-wrap lg:px-[170px]">
-  <div className="w-full md:w-1/3 p-2 mb-12 lg:mb-0">
+      <div className="flex flex-wrap items-center justify-center lg:px-[170px]">
+  <div className=" md:w-1/3 p-2 mb-12 lg:mb-0">
     <div className="w-72 h-72 relative bg-[#221E5B] shadow-lg rounded-lg p-4 flex flex-col justify-between items-center">
       <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#E22D51] w-16 h-16 rounded-full flex justify-center items-center">
         <FaQuoteLeft className="text-white text-2xl" />
@@ -33,7 +33,7 @@ const Testimonials = () => {
     </div>
   </div>
 
-  <div className="w-full md:w-1/3 p-2 mb-12 lg:mb-0">
+  <div className=" md:w-1/3 p-2 mb-12 lg:mb-0">
     <div className="w-72 h-72 relative bg-[#221E5B] shadow-lg rounded-lg p-4 flex flex-col justify-between items-center">
       <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#E22D51] w-16 h-16 rounded-full flex justify-center items-center">
         <FaQuoteLeft className="text-white text-2xl" />
@@ -51,7 +51,7 @@ const Testimonials = () => {
     </div>
   </div>
 
-  <div className="w-full md:w-1/3 p-2 mb-12 lg:mb-0 order-first md:order-last lg:order-last">
+  <div className="md:w-1/3 p-2 px-6 lg:px-0 mb-12 lg:mb-0 order-first md:order-last lg:order-last">
     {/* Content for the third column */}
     <h2 className='text-[#E22D51] text-[25px] font-bold'>Testimonials</h2>
     <p className='text-[#FFFFFF] text-[40px] mt-4 font-bold'>What our clients say about us</p>
@@ -62,8 +62,8 @@ const Testimonials = () => {
 </div>
 
   {/* Second Section */}
-  <div className="flex flex-wrap lg:mt-12 lg:px-[170px] ">
-  <div className="w-full md:w-1/3 p-2 mb-12 lg:mb-0">
+  <div className="flex flex-wrap items-center justify-center  lg:mt-12 lg:px-[170px] ">
+  <div className=" md:w-1/3 p-2 mb-12 lg:mb-0">
       {/* Card Container */}
       <div className="w-72 h-72 relative bg-[#221E5B] shadow-lg rounded-lg p-4 flex flex-col justify-between items-center">
         {/* Circle with Icon */}
@@ -89,7 +89,7 @@ const Testimonials = () => {
         </div>
       </div>
     </div>
-    <div className="w-full md:w-1/3 p-2 mb-12 lg:mb-0">
+    <div className="md:w-1/3 p-2 mb-12 lg:mb-0">
       {/* Card Container */}
       <div className="w-72 h-72 relative bg-[#221E5B] shadow-lg rounded-lg p-4 flex flex-col justify-between items-center">
         {/* Circle with Icon */}
@@ -115,7 +115,7 @@ const Testimonials = () => {
         </div>
       </div>
     </div>
-    <div className="w-full md:w-1/3 p-2 mb-12 lg:mb-0">
+    <div className="md:w-1/3 p-2 mb-12 lg:mb-0">
       {/* Card Container */}
       <div className="w-72 h-72 relative bg-[#221E5B] shadow-lg rounded-lg p-4 flex flex-col justify-between items-center">
         {/* Circle with Icon */}
@@ -143,8 +143,8 @@ const Testimonials = () => {
     </div>
   </div>
   {/* Third Section */}
-  <div className="flex flex-wrap lg:mt-12 lg:px-[170px]">
-  <div className="w-full md:w-1/3 p-2 mb-12 lg:mb-0">
+  <div className="flex flex-wrap items-center justify-center lg:mt-12 lg:px-[170px]">
+  <div className="md:w-1/3 p-2 mb-12 lg:mb-0">
       {/* Card Container */}
       <div className="w-72 h-72 relative bg-[#221E5B] shadow-lg rounded-lg p-4 flex flex-col justify-between items-center">
         {/* Circle with Icon */}
@@ -170,7 +170,7 @@ const Testimonials = () => {
         </div>
       </div>
     </div>
-    <div className="w-full md:w-1/3 p-2 mb-12 lg:mb-0">
+    <div className="md:w-1/3 p-2 mb-12 lg:mb-0">
       {/* Card Container */}
       <div className="w-72 h-72 relative bg-[#221E5B] shadow-lg rounded-lg p-4 flex flex-col justify-between items-center">
         {/* Circle with Icon */}
@@ -196,7 +196,7 @@ const Testimonials = () => {
         </div>
       </div>
     </div>
-    <div className="w-full md:w-1/3 p-2 mb-12 lg:mb-0">
+    <div className="md:w-1/3 p-2 mb-12 lg:mb-0">
       {/* Card Container */}
       <div className="w-72 h-72 relative bg-[#221E5B] shadow-lg rounded-lg p-4 flex flex-col justify-between items-center">
         {/* Circle with Icon */}

@@ -11,6 +11,8 @@ import Subscription from '@/components/Subscription'
 import Devices from '@/components/Devices'
 import WhoWeAre from '@/components/WhoWeAre'
 import Testimonials from '@/components/Testimonials'
+import ChatCarousel from '@/components/ChatCarousel'
+import ContactUS from '@/components/ContactUS'
 const page = () => {
   return (
     <>
@@ -26,6 +28,8 @@ const page = () => {
     <Devices/>
     <WhoWeAre/>
     <Testimonials/>
+    <ChatCarousel/>
+    <ContactUS/>
     </>
   )
 }
