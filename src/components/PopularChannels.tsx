@@ -6,8 +6,8 @@ import header_img from '../../public/images/Popular-TV-Channels-and-Shows.jpg';
 import { MdArrowRight } from "react-icons/md";
 import { RiArrowDownSFill } from "react-icons/ri";
 import { PiDotOutlineFill } from "react-icons/pi"; // Importing the bullet point icon
-import LogoCarousel from './LogoCarousel';
 import { v4 as uuidv4 } from 'uuid';
+import ChannelsCarousel from './ChannelsCarousel';
 const PopularChannels = () => {
   const [openIndexes1, setOpenIndexes1] = useState<number[]>([]);
   const [openIndexes2, setOpenIndexes2] = useState<number[]>([]);
@@ -287,7 +287,7 @@ const PopularChannels = () => {
       </div>
     </div>
   </div>
-  <LogoCarousel/>
+  <ChannelsCarousel/>
 </div>
 
   );
