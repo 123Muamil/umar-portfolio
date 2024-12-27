@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '@/components/Navbar'
 import Header from '@/components/Header'
 import About from '@/components/About'
 import OurServices from '@/components/OurServices'
@@ -18,7 +17,6 @@ import Rights from '@/components/Rights'
 const page = () => {
   return (
     <>
-     <Navbar/> 
      <Header/>
      <About/>
      <OurServices/>

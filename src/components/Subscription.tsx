@@ -5,12 +5,19 @@ import sub from '../../public/images/sub.png'
 import sub1 from '../../public/images/sub1.png'
 import sub2 from '../../public/images/sub2.png'
 import SubscriptionPlans from './SubscriptionPlans'
+import { usePathname } from 'next/navigation';
+
 const Subscription = () => {
+  const pathname = usePathname();
+
     const WattsappOpen = () => {
         window.open('https://wa.me/+447826176784', '_blank');
     };
   return (
-    <div className='bg-[#221E5B] '>
+    <div className={`bg-[#221E5B] ${pathname === '/single-plan' ? 'pt-[1px]' : 'pt-0'}`}>
+
+       {pathname === '/single-plan' ? null : (
+  <>
     <div className="container mx-auto px-4">
         <h1 className='text-[#FFFFFF] text-[35px] text-center font-bold pt-[60px]'>Get Your Subscription</h1>
   <div className="flex flex-wrap">
@@ -74,6 +81,10 @@ Place your order today and experience premium IPTV streaming like never before!
     </div>
   </div>
 </div>
+  </>
+)}
+
+   
 
 <SubscriptionPlans/>
 

@@ -57,12 +57,12 @@ const Navbar = () => {
               {isDropdownOpen && (
                 <ul className="absolute bg-white shadow-lg mt-2 rounded-md w-40">
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/single-plan"
                       className="block px-4 py-2 text-gray-800 hover:bg-blue-600 hover:text-white"
                     >
                       Single Plan
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a

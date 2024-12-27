@@ -1,9 +1,11 @@
 "use client";
+import { usePathname } from 'next/navigation';
 import { FaCheckCircle } from 'react-icons/fa';
 import { FaApple,FaWindows,FaYoutube   } from "react-icons/fa";
 import { GrAndroid } from "react-icons/gr";
 
 const SubscriptionPlans = () => {
+  const pathname = usePathname();
   const WattsappOpen = () => {
     window.open('https://wa.me/+447826176784', '_blank');
 };
@@ -453,8 +455,10 @@ const SubscriptionPlans = () => {
           </div>
         </div>
       </div>
-      <h1 className='text-[#FFFFFF] text-[35px] text-center font-bold pt-[60px]'>Get Friends & Family Plan</h1>
-      <div className="flex flex-wrap lg:mx-[150px] h-full">
+      {pathname === '/single-plan' ? null : (
+  <>
+   <h1 className='text-[#FFFFFF] text-[35px] text-center font-bold pt-[60px]'>Get Friends & Family Plan</h1>
+   <div className="flex flex-wrap lg:mx-[150px] h-full">
         {/* Plan 1 */}
         <div className="w-full  md:w-1/3 mt-12">
           <div className="bg-[#040037] rounded-lg p-4 h-full flex flex-col justify-between w-[350px] " style={{boxShadow: '0 0 10px red'}}>
@@ -601,6 +605,11 @@ const SubscriptionPlans = () => {
           </div>
         </div>
       </div>
+  </>
+)}
+
+      
+      
     </div>
   );
 };
