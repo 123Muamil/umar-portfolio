@@ -206,12 +206,12 @@ const Navbar = () => {
   {isDropdownOpen && (
     <ul className="mt-2  w-full">
       <li>
-        <a
-          href="#"
+        <Link
+          href="/single-plan"
           className="block px-4 py-2 text-[#565483] text-[20px] font-bold hover:text-[#E32D51]"
         >
           Single Plan
-        </a>
+        </Link>
       </li>
       <li>
         <a
