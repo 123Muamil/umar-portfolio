@@ -283,12 +283,15 @@ const PopularChannels = () => {
         {
           pathname==='/single-plan'?<Image src={singlePlan} style={{ width: '90%', height: 'auto', borderRadius: '10px', boxShadow: '0 0 10px red' }} alt="header_img" />:<Image src={header_img} style={{ width: '100%', height: '450px',objectFit:'cover', borderRadius: '10px', boxShadow: '0 0 10px red' }} alt="header_img" />
         }
-        <a
-          className="bg-[#E22D51] mt-6 text-white w-full h-[60px] flex items-center justify-center cursor-pointer rounded-[30px] hover:bg-[#67CDF0]"
-          onClick={WattsappOpen}
-        >
-          Join Now And Unlock Premium Content
-        </a>
+       <a
+  className="bg-[#E22D51] mt-6 text-white w-[90%] h-[60px] flex items-center justify-center cursor-pointer rounded-[30px] hover:bg-[#67CDF0]"
+  onClick={WattsappOpen}
+>
+  {pathname === '/single-plan' 
+    ? 'Join today and enjoy nonstop entertainment!' 
+    : 'Join Now And Unlock Premium Content'}
+</a>
+
       </div>
     </div>
   </div>
