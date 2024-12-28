@@ -27,6 +27,11 @@ const Navbar = () => {
       ? 'text-[#E32D51]'
       : 'text-[#565483]  hover:text-[#5FBFDB]';
   };
+  const linkClass1 = (link: string) => {
+    return activeLink === link
+      ? 'text-[#E32D51]'
+      : 'text-[#FFFFFF]  hover:text-[#5FBFDB]';
+  };
   const WattsappOpen = () => {
     window.open('https://wa.me/+447826176784', '_blank');
   };
@@ -41,7 +46,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center text-[20px] space-x-4">
             <Link
               href="/"
-              className={`${linkClass('home')}`}
+              className={`${linkClass1('home')}`}
               onClick={() => handleLinkClick('home')}
             >
               Home
@@ -79,42 +84,42 @@ const Navbar = () => {
             </div>
             <a
               href="#"
-              className={`${linkClass('reseller')}`}
+              className={`${linkClass1('reseller')}`}
               onClick={() => handleLinkClick('reseller')}
             >
               Reseller
             </a>
             <a
               href="#"
-              className={`${linkClass('guide')}`}
+              className={`${linkClass1('guide')}`}
               onClick={() => handleLinkClick('guide')}
             >
               Guide
             </a>
             <a
               href="#"
-              className={`${linkClass('iptvs')}`}
+              className={`${linkClass1('iptvs')}`}
               onClick={() => handleLinkClick('iptvs')}
             >
               IPTVs
             </a>
             <a
               href="#"
-              className={`${linkClass('about')}`}
+              className={`${linkClass1('about')}`}
               onClick={() => handleLinkClick('about')}
             >
               About
             </a>
             <a
               href="#"
-              className={`${linkClass('contact')}`}
+              className={`${linkClass1('contact')}`}
               onClick={() => handleLinkClick('contact')}
             >
               Contact
             </a>
             <a
               href="#"
-              className={`${linkClass('blogs')}`}
+              className={`${linkClass1('blogs')}`}
               onClick={() => handleLinkClick('blogs')}
             >
               Blogs
