@@ -1,10 +1,19 @@
+import ChooseOurIPTVReseller from '@/pages/reseller/ChooseOurIPTVReseller'
+import Header from '@/pages/reseller/Header'
+import HeaderBottom from '@/pages/reseller/HeaderBottom'
+import IPTVBusiness from '@/pages/reseller/IPTVBusiness'
+import ResellerPlan from '@/pages/reseller/ResellerPlan'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>
-      <h1>reseller</h1>
-    </div>
+    <>
+      <Header/>
+      <HeaderBottom/>
+      <ChooseOurIPTVReseller/>
+      <IPTVBusiness/>
+      <ResellerPlan/>
+    </>
   )
 }
 

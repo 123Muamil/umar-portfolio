@@ -3,21 +3,21 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from 'next/image';
-import img from '../../public/images/Channels-6.png'
-import img2 from '../../public/images/Channels-6.png'
-import img6 from '../../public/images/Channels-6.png'
-import img8 from '../../public/images/Channels-6.png'
-import img9 from '../../public/images/Channels-6.png'
-import img11 from '../../public/images/Channels-6.png'
-import img15 from '../../public/images/Channels-6.png'
-import img19 from '../../public/images/IMovies-19.jpg'
-import img20 from '../../public/images/Channels-6.png'
-import img24 from '../../public/images/Movies-24.jpg'
-import img25 from '../../public/images/Channels-6.png'
-import img26 from '../../public/images/Channels-6.png'
-import img27 from '../../public/images/Channels-6.png'
-import img28 from '../../public/images/Channels-6.png'
-import img30 from '../../public/images/Channels-6.png'
+import img1 from '../../public/images/c1.png'
+import img2 from '../../public/images/c2.png'
+import img3 from '../../public/images/c3.png'
+import img4 from '../../public/images/c4.png'
+import img5 from '../../public/images/c5.png'
+import img6 from '../../public/images/c6.png'
+import img7 from '../../public/images/c7.png'
+import img8 from '../../public/images/c8.png'
+import img9 from '../../public/images/c9.png'
+import img10 from '../../public/images/c10.png'
+import img11 from '../../public/images/c11.png'
+import img12 from '../../public/images/c12.png'
+import img13 from '../../public/images/c13.png'
+import img14 from '../../public/images/c14.png'
+import img15 from '../../public/images/c15.png'
 const CompaniesCarousel = () => {
     const responsive = {
         superLargeDesktop: {
@@ -39,25 +39,25 @@ const CompaniesCarousel = () => {
     };
 
     const images = [
-        img, img2, img6, img8,img9, img11, img15, img19, img20,img24, img25,img26, img27, img28, img30
+        img1, img2, img3, img4,img5, img6, img7, img8, img9,img10, img11,img12, img13, img14, img15
     ];
 
   return (
-    <div className='container h-[300px] border-[10px] rounded-[10px]  border-[#FFFFFF] mx-auto'>
-      <Carousel
+    <div className='container h-[250px] border-[10px] rounded-[10px]  border-[#FFFFFF] mx-auto'>
+     <Carousel
                       responsive={responsive}
                       infinite={true} 
                       autoPlay={true}  
-                      autoPlaySpeed={1000}  
-                      transitionDuration={500}  
+                      autoPlaySpeed={1000}  // Slower autoplay speed (default is 3000)
+                      transitionDuration={500}  // Slower transition duration (default is 500)
                       arrows={true} 
-                      itemClass=""
+                      itemClass="p-4"
                   >
                       {images.map((image, index) => (
                           <Image
                               key={index}
                               src={image}
-                              style={{ width: '100%',height:"280px",  objectFit: 'cover' }}
+                              style={{ width: '100%',height:"200px",borderRadius:'10px' }}
                               alt={`Image ${index + 1}`}
                           />
                       ))}

@@ -82,13 +82,13 @@ const Navbar = () => {
                 </ul>
               )}
             </div>
-            <a
-              href="#"
+            <Link
+              href="/reseller"
               className={`${linkClass1('reseller')}`}
               onClick={() => handleLinkClick('reseller')}
             >
               Reseller
-            </a>
+            </Link>
             <a
               href="#"
               className={`${linkClass1('guide')}`}
@@ -235,13 +235,13 @@ const Navbar = () => {
 </div>
 
 
-  <a
-    href="#"
+  <Link
+    href="/reseller"
     className={`${linkClass('reseller')}  text-[20px] font-bold font-bold py-4 hover:text-[#E32D51]`}
     onClick={() => handleLinkClick('reseller')}
   >
     Reseller
-  </a>
+  </Link>
 
   <a
     href="#"
