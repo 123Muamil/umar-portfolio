@@ -16,7 +16,7 @@ const Subscription = () => {
   return (
     <div className={`bg-[#221E5B] ${pathname === '/single-plan' ? 'pt-[1px]' : 'pt-0'}`}>
 
-       {pathname === '/single-plan' ? null : (
+       {pathname === '/single-plan' || pathname==='/friends-and-family-plan' ? null : (
   <>
     <div className="container mx-auto px-4">
         <h1 className='text-[#FFFFFF] text-[35px] text-center font-bold pt-[60px]'>Get Your Subscription</h1>

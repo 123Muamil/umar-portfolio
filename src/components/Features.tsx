@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import header_img from '../../public/images/feature.png';
+import singlePlan from '../../public/images/singlePlan2.png';
+import familyPlan from '../../public/images/familyPlan5.png';
 import { MdArrowRight } from "react-icons/md";
 import { RiArrowDownSFill } from "react-icons/ri";
 import { usePathname } from 'next/navigation';
@@ -145,13 +147,61 @@ const Features = () => {
             </div>
           </div>
           <div className="col-span-1 flex flex-col items-center justify-center">
-            <Image src={header_img} style={{ width: '100%', height: '450px',objectFit:'cover', borderRadius: '10px', boxShadow: '0 0 10px red' }} alt="header_img" />
+          {
+  pathname === '/single-plan' ? (
+    <Image 
+      src={singlePlan} 
+      style={{ 
+        width: '100%', 
+        height: '450px', 
+        objectFit: 'cover', 
+        borderRadius: '10px', 
+        boxShadow: '0 0 10px red' 
+      }} 
+      alt="header_img" 
+    />
+  ) : pathname === '/friends-and-family-plan' ? (
+    <Image 
+      src={familyPlan} 
+      style={{ 
+        width: '100%', 
+        height: '450px', 
+        objectFit: 'cover', 
+        borderRadius: '10px', 
+        boxShadow: '0 0 10px red' 
+      }} 
+      alt="header_img" 
+    />
+  ) : (
+    <Image 
+      src={header_img} 
+      style={{ 
+        width: '100%', 
+        height: '450px', 
+        objectFit: 'cover', 
+        borderRadius: '10px', 
+        boxShadow: '0 0 10px red' 
+      }} 
+      alt="header_img" 
+    />
+  )
+}
+
             <a
               
               className="bg-[#E22D51] mt-6 text-white w-full h-[60px] flex items-center justify-center cursor-pointer rounded-[30px] hover:bg-[#67CDF0]"
           onClick={WattsappOpen}
             >
-              Subscribe Today And Never Miss A Moment
+              {
+  pathname === '/single-plan' ? (
+    <p>Secure your subscription and start streaming!</p>
+  ) : pathname === '/friends-and-family-plan' ? (
+    <p>Start streaming with your subscription now!</p>
+  ) : (
+    <p>Subscribe Today And Never Miss A Moment</p>
+  )
+}
+
             </a>
           </div>
         </div>

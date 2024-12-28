@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import devices from '../../public/images/devices.png'
 import devices1 from '../../public/images/devices1.png'
+import familyPlan from '../../public/images/familyPlan2.png'
 import CompaniesCarousel from './CompaniesCarousel'
 import { usePathname } from 'next/navigation'
 const Devices = () => {
@@ -11,7 +12,7 @@ const Devices = () => {
     window.open('https://wa.me/+447826176784', '_blank');
 };
   return (
-    <div className='bg-[#040037] pb-[60px]'>
+    <div className='bg-[#040037] pb-[60px]' >
     <div className="container mx-auto px-4 pt-[60px] pb-[60px]">
     <div className="flex flex-wrap">
       <div className="w-full  md:w-1/2">
@@ -31,26 +32,34 @@ const Devices = () => {
       </div>
       <div className="w-full flex flex-col items-center justify-center md:w-1/2">
       
-      {pathname === '/single-plan' ? (<>
-        <div className='flex flex-col'>
-        <div className='bg-[#FFFFFF] mt-6 lg:mt-0 flex items-center justify-center lg:w-[450px] lg:h-[450px] rounded-[10px]'>
-        <Image src={devices1} style={{width:'100%' ,objectFit:'cover'}} alt='img'/>
-        
-        </div>
-        <a
-              
-              className="bg-[#E22D51] mt-6 text-white w-full h-[50px] flex items-center justify-center cursor-pointer rounded-[5px] hover:bg-[#67CDF0]"
-          onClick={WattsappOpen}
-            >
-Don’t wait – get your subscription today!            </a>
-        </div>
-      </>) : (
+      {pathname === '/single-plan' ? (
   <>
-  <div className='bg-[#FFFFFF] mt-6 lg:mt-0 flex items-center justify-center lg:w-[450px] lg:h-[450px] rounded-[10px]'>
-  <Image src={devices} style={{width:'100%' ,objectFit:'cover'}} alt='img'/>
-  </div>
+    <div className='flex flex-col'>
+      <div className='bg-[#FFFFFF] mt-6 lg:mt-0 flex items-center justify-center lg:w-[450px] lg:h-[450px] rounded-[10px]'>
+        <Image src={devices1} style={{ width: '100%', objectFit: 'cover' }} alt='img' />
+      </div>
+      <a
+        className="bg-[#E22D51] mt-6 text-white w-full h-[50px] flex items-center justify-center cursor-pointer rounded-[5px] hover:bg-[#67CDF0]"
+        onClick={WattsappOpen}
+      >
+        Don’t wait – get your subscription today!
+      </a>
+    </div>
+  </>
+) : pathname === '/friends-and-family-plan' ? (
+  <>
+    <div className='bg-[#FFFFFF] mt-6 lg:mt-0 flex items-center justify-center lg:w-[450px] lg:h-[450px] rounded-[10px]'>
+      <Image src={familyPlan} style={{ width: '100%', objectFit: 'cover' }} alt='img' />
+    </div>
+  </>
+) : (
+  <>
+    <div className='bg-[#FFFFFF] mt-6 lg:mt-0 flex items-center justify-center lg:w-[450px] lg:h-[450px] rounded-[10px]'>
+      <Image src={devices} style={{ width: '100%', objectFit: 'cover' }} alt='img' />
+    </div>
   </>
 )}
+
 
 
     

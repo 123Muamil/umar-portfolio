@@ -287,9 +287,18 @@ const PopularChannels = () => {
   className="bg-[#E22D51] mt-6 text-white w-[90%] h-[60px] flex items-center justify-center cursor-pointer rounded-[30px] hover:bg-[#67CDF0]"
   onClick={WattsappOpen}
 >
-  {pathname === '/single-plan' 
-    ? 'Join today and enjoy nonstop entertainment!' 
-    : 'Join Now And Unlock Premium Content'}
+ 
+
+{
+  pathname === '/single-plan' ? (
+    <>Join today and enjoy nonstop entertainment!</>
+  ) : pathname === '/friends-and-family-plan' ? (
+    <>Join today and enjoy nonstop entertainment!</>
+  ) : (
+    <>Join Now And Unlock Premium Content</>
+  )
+}
+
 </a>
 
       </div>

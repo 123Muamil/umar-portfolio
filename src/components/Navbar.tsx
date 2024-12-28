@@ -66,12 +66,13 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/friends-and-family-plan"
                       className="block px-4 py-2 text-gray-800 hover:bg-blue-600 hover:text-white"
+                      onClick={()=>setIsDropdownOpen(false)}
                     >
                       Friends and Family Plan
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               )}
@@ -216,12 +217,13 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <a
-          href="#"
+        <Link
+          href="/friends-and-family-plan"
           className="block px-4 py-2 text-[#565483] text-[20px] font-bold hover:text-[#E32D51]"
+          onClick={()=>setIsDropdownOpen(false)}
         >
           Friends and Family Plan
-        </a>
+        </Link>
       </li>
     </ul>
   )}
