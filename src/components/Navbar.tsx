@@ -20,6 +20,7 @@ const Navbar = () => {
 
   const handleLinkClick = (link: string) => {
     setActiveLink(link);
+    setIsMobileMenuOpen(false)
   };
 
   const linkClass = (link: string) => {
@@ -35,6 +36,10 @@ const Navbar = () => {
   const WattsappOpen = () => {
     window.open('https://wa.me/+447826176784', '_blank');
   };
+  const handleClose=()=>{
+    setIsDropdownOpen(false)
+    setIsMobileMenuOpen(false)
+  }
   return (
     <header className="bg-[#514D7C] sticky top-0 w-full shadow-md z-10">
       <nav className="container mx-auto px-6 py-3">
@@ -216,7 +221,7 @@ const Navbar = () => {
         <Link
           href="/single-plan"
           className="block px-4 py-2 text-[#565483] text-[20px] font-bold hover:text-[#E32D51]"
-          onClick={()=>setIsDropdownOpen(false)}
+          onClick={handleClose}
         >
           Single Plan
         </Link>
@@ -225,7 +230,7 @@ const Navbar = () => {
         <Link
           href="/friends-and-family-plan"
           className="block px-4 py-2 text-[#565483] text-[20px] font-bold hover:text-[#E32D51]"
-          onClick={()=>setIsDropdownOpen(false)}
+          onClick={handleClose}
         >
           Friends and Family Plan
         </Link>
