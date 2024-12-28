@@ -41,9 +41,7 @@ const IPTVBusiness = () => {
     "Global Cinema": "Immerse yourself in award-winning films from Hollywood, Bollywood, Nollywood, and beyond.",
     "Genre Favorites": "    1. Action-packed thrillers 2. Romantic comedies 3. Spine-chilling horror 4. Inspiring biographies"
   };
-  const WattsappOpen = () => {
-    window.open('https://wa.me/+447826176784', '_blank');
-  };
+  
   return (
     <div className="bg-[#040037]">
       <div className="container mx-auto px-4 pt-[60px] pb-[100px]">

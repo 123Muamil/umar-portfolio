@@ -3,7 +3,6 @@ import React from 'react'
 import Image from 'next/image'
 import reseller from '../../../public/images/reseller1.png'
 import Link from 'next/link'
-import { IoCheckbox } from 'react-icons/io5'
 const HeaderBottom = () => {
   return (
     <div className='bg-[#040037]'>
