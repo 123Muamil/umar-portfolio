@@ -5,11 +5,12 @@ import Image from 'next/image';
 import header_img from '../../public/images/feature.png';
 import { MdArrowRight } from "react-icons/md";
 import { RiArrowDownSFill } from "react-icons/ri";
+import { usePathname } from 'next/navigation';
 
 const Features = () => {
   const [openIndexes1, setOpenIndexes1] = useState<number[]>([]);
   const [openIndexes2, setOpenIndexes2] = useState<number[]>([]);
-
+  const pathname=usePathname()
   const MoviesContent: string[] = [
     "Latest Blockbusters",
     "Classic Favorites",
@@ -56,7 +57,7 @@ const Features = () => {
     window.open('https://wa.me/+447826176784', '_blank');
   };
   return (
-    <div className="bg-[#040037]">
+    <div className={`${pathname==='/single-plan'?"bg-[#221E5B]":"bg-[#040037]"}`}>
       <div className="container mx-auto px-4 pt-[60px] pb-[100px]">
         <div className="grid lg:px-10 grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="col-span-1 flex flex-col justify-center items-start text-start">

@@ -3,12 +3,15 @@ import React, { JSX, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import header_img from '../../public/images/Popular-TV-Channels-and-Shows.jpg';
+import singlePlan from '../../public/images/singlePlan1.png';
 import { MdArrowRight } from "react-icons/md";
 import { RiArrowDownSFill } from "react-icons/ri";
 import { PiDotOutlineFill } from "react-icons/pi"; // Importing the bullet point icon
 import { v4 as uuidv4 } from 'uuid';
 import ChannelsCarousel from './ChannelsCarousel';
+import { usePathname } from 'next/navigation';
 const PopularChannels = () => {
+  const pathname=usePathname()
   const [openIndexes1, setOpenIndexes1] = useState<number[]>([]);
   const [openIndexes2, setOpenIndexes2] = useState<number[]>([]);
   const uid = uuidv4()
@@ -277,7 +280,9 @@ const PopularChannels = () => {
         </div>
       </div>
       <div className="col-span-1 flex flex-col items-center justify-center">
-        <Image src={header_img} style={{ width: '100%', height: '450px',objectFit:'cover', borderRadius: '10px', boxShadow: '0 0 10px red' }} alt="header_img" />
+        {
+          pathname==='/single-plan'?<Image src={singlePlan} style={{ width: '90%', height: 'auto', borderRadius: '10px', boxShadow: '0 0 10px red' }} alt="header_img" />:<Image src={header_img} style={{ width: '100%', height: '450px',objectFit:'cover', borderRadius: '10px', boxShadow: '0 0 10px red' }} alt="header_img" />
+        }
         <a
           className="bg-[#E22D51] mt-6 text-white w-full h-[60px] flex items-center justify-center cursor-pointer rounded-[30px] hover:bg-[#67CDF0]"
           onClick={WattsappOpen}

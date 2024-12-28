@@ -27,9 +27,64 @@ const Faqs = () => {
             "To create an account, find the 'Sign up' or 'Create account' button, fill out the registration form with your personal information, and click 'Create account' or 'Sign up.' Verify your email address if needed, and then log in to start using the platform.",
         },
         {
-          question: "How do I delete my account?",
+          question: "Can I upgrade to a different plan later?",
           answer:
-            "To create an account, find the 'Sign up' or 'Create account' button, fill out the registration form with your personal information, and click 'Create account' or 'Sign up.' Verify your email address if needed, and then log in to start using the platform.",
+            "",
+        },
+        {
+          question: "Is the Single Plan available for all subscription durations?",
+          answer:
+            "",
+        },
+        {
+          question: "Can I watch content offline with the Single Plan?",
+          answer:
+            "",
+        },
+        {
+          question: "What happens if I switch devices?",
+          answer:
+            "",
+        },
+        {
+          question: "How do I set up the Single Plan?",
+          answer:
+            "",
+        },
+        {
+          question: "Is the Single Plan suitable for Smart TVs?",
+          answer:
+            "",
+        },
+        {
+          question: "Can I share my account with someone else?",
+          answer:
+            "",
+        },
+        {
+          question: "What should I do if I experience buffering?",
+          answer:
+            "",
+        },
+        {
+          question: "Does the Single Plan include adult channels?",
+          answer:
+            "",
+        },
+        {
+          question: "How often is the content updated?",
+          answer:
+            "",
+        },
+        {
+          question: "Can I cancel my subscription at any time?",
+          answer:
+            "",
+        },
+        {
+          question: "What payment methods are accepted?",
+          answer:
+            "",
         },
       ];
     const WattsappOpen = () => {
@@ -41,20 +96,20 @@ const Faqs = () => {
     <div className="flex flex-wrap">
       <div className="w-full lg:pl-[150px]   md:w-1/2">
       {/* <div className="col-span-1  "> */}
-                        <h1 className='text-[#E22D51] text-[20px] font-bold'>FAQs – Single Plan</h1>
-                        <h1 className='text-[#FFFFFF] text-[30px] mt-4 font-bold'>do you have a question?</h1>
-                        <p className='text-[#FFFFFF] mt-4 mb-6'>Here are some <Link href='/' className='text-[#E22D51] underline decoration-[#E22D51]'>frequently asked questions</Link> about the Single Plan to help you better understand this <Link href='/' className='text-[#E22D51] underline decoration-[#E22D51]'>subscription option</Link>. For more information about the Single Plan, feel free to <Link href='/' className='text-[#E22D51] underline decoration-[#E22D51]'>contact</Link> our support team. We’re here to make sharing entertainment easy and enjoyable!</p>
+                        <h1 className="text-4xl font-manrope mt-2 font-bold text-[#E22D51] ">FAQs – Single Plan</h1>
+                        <h1 className='text-[#FFFFFF] text-[45px] mt-4 font-bold'>Do you have a question?</h1>
+                        <p className='text-[#FFFFFF] mt-4 mb-[40px]'>Here are some <Link href='/' className='text-[#E22D51] underline decoration-[#E22D51]'>frequently asked questions</Link> about the <span className='font-bold'>Single Plan</span> to help you better understand this <Link href='/' className='text-[#E22D51] underline decoration-[#E22D51]'>subscription option</Link>. For more information about the Single Plan, feel free to <Link href='/' className='text-[#E22D51] underline decoration-[#E22D51]'>contact</Link> our support team. We’re here to make sharing entertainment easy and enjoyable!</p>
                        
                         <a
-        className="bg-[#E22D51] text-white  flex items-center justify-center h-[50px] w-full rounded-[30px] cursor-pointer hover:bg-[#67CDF0]"
+        className="bg-[#E22D51] text-white  flex items-center justify-center h-[60px] w-full rounded-[30px] cursor-pointer hover:bg-[#67CDF0]"
         onClick={WattsappOpen}
       >
       Get Started With Your Single Subscription Now
       </a>
-      <div className='bg-[#FFFFFF] mt-6  flex items-center justify-center  rounded-[10px]'>
+      <div className='bg-[#FFFFFF] mt-[40px]  flex items-center justify-center  rounded-[10px]'>
       <Image src={faq1} style={{width:'100%' ,height:'auto',objectFit:'cover'}} alt='img'/>
       </div>
-      <div className='bg-[#FFFFFF] w-full mt-6  flex items-center justify-center  rounded-[10px]'>
+      <div className='bg-[#FFFFFF] w-full mt-[40px]  flex items-center justify-center  rounded-[10px]'>
       <Image src={faq2} style={{width:'100%' ,height:'auto',objectFit:'cover'}} alt='img'/>
       </div>  
       </div>
@@ -70,7 +125,7 @@ const Faqs = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`accordion   p-4 rounded-xl mb-8 transition-all ${
+              className={`accordion   p-4 rounded-xl mb-2 transition-all ${
                 activeIndex === index
                   ? "bg-[#67CDF0]"
                   : "bg-[#221E5B]"
@@ -82,9 +137,9 @@ const Faqs = () => {
               >
                 <h5>{faq.question}</h5>
                 {activeIndex === index ? (
-                  <FaMinus className="w-6 h-6 text-[#E22D51]" />
+                  <FaMinus className="text-[#FFFFFF]" />
                 ) : (
-                  <FaPlus className="w-6 h-6 text-[#FFFFFF] group-hover:text-indigo-600" />
+                  <FaPlus className=" text-[#FFFFFF] group-hover:text-indigo-600" />
                 )}
               </button>
               <div
@@ -92,7 +147,7 @@ const Faqs = () => {
                   activeIndex === index ? "max-h-screen" : "max-h-0"
                 }`}
               >
-                <p className="text-base text-gray-900 font-normal leading-6">
+                <p className="text-base text-[#FFFFFF] font-normal leading-6">
                   {faq.answer}
                 </p>
               </div>

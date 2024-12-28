@@ -60,6 +60,7 @@ const Navbar = () => {
                     <Link
                       href="/single-plan"
                       className="block px-4 py-2 text-gray-800 hover:bg-blue-600 hover:text-white"
+                      onClick={()=>setIsDropdownOpen(false)}
                     >
                       Single Plan
                     </Link>
@@ -209,6 +210,7 @@ const Navbar = () => {
         <Link
           href="/single-plan"
           className="block px-4 py-2 text-[#565483] text-[20px] font-bold hover:text-[#E32D51]"
+          onClick={()=>setIsDropdownOpen(false)}
         >
           Single Plan
         </Link>
