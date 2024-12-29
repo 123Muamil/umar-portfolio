@@ -4,6 +4,7 @@ import Image from 'next/image'
 import devices from '../../public/images/devices.png'
 import devices1 from '../../public/images/devices1.png'
 import familyPlan from '../../public/images/familyPlan2.png'
+import reseller from '../../public/images/reseller4.png'
 import CompaniesCarousel from './CompaniesCarousel'
 import { usePathname } from 'next/navigation'
 const Devices = () => {
@@ -52,7 +53,19 @@ const Devices = () => {
       <Image src={familyPlan} style={{ width: '100%', objectFit: 'cover' }} alt='img' />
     </div>
   </>
-) : (
+) :pathname === '/reseller' ?(<>
+ <div className='flex flex-col'>
+ <div className='bg-[#FFFFFF] mt-6 lg:mt-0 flex items-center justify-center lg:w-[450px] lg:h-[450px] rounded-[10px]'>
+      <Image src={reseller} style={{ width: '100%', objectFit: 'cover' }} alt='img' />
+    </div>
+    <a
+        className="bg-[#E22D51] mt-6 text-white w-full h-[50px] flex items-center justify-center cursor-pointer rounded-[5px] hover:bg-[#67CDF0]"
+        onClick={WattsappOpen}
+      >
+       Unlock premium streaming – subscribe now!
+      </a>
+ </div>
+</>): (
   <>
     <div className='bg-[#FFFFFF] mt-6 lg:mt-0 flex items-center justify-center lg:w-[450px] lg:h-[450px] rounded-[10px]'>
       <Image src={devices} style={{ width: '100%', objectFit: 'cover' }} alt='img' />
