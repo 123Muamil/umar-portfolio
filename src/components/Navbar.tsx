@@ -115,13 +115,13 @@ const Navbar = () => {
             >
               About
             </Link>
-            <a
-              href="#"
+            <Link
+              href="/contact"
               className={`${linkClass1('contact')}`}
               onClick={() => handleLinkClick('contact')}
             >
               Contact
-            </a>
+            </Link>
             <a
               href="#"
               className={`${linkClass1('blogs')}`}
@@ -272,13 +272,13 @@ const Navbar = () => {
     About
   </Link>
 
-  <a
-    href="#"
+  <Link
+    href="/contact"
     className={`${linkClass('contact')}  text-[20px] font-bold py-4 hover:text-[#E32D51]`}
     onClick={() => handleLinkClick('contact')}
   >
     Contact
-  </a>
+  </Link>
 
   <a
     href="#"

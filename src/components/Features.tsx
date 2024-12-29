@@ -6,6 +6,7 @@ import header_img from '../../public/images/feature.png';
 import singlePlan from '../../public/images/singlePlan2.png';
 import familyPlan from '../../public/images/familyPlan5.png';
 import about from '../../public/images/about2.png';
+import contact from '../../public/images/contact8.png';
 import { MdArrowRight } from "react-icons/md";
 import { RiArrowDownSFill } from "react-icons/ri";
 import { usePathname } from 'next/navigation';
@@ -63,7 +64,7 @@ const Features = () => {
     <div className={`${
       pathname === '/single-plan'
         ? "bg-[#040037]"
-        : pathname === '/about'
+        : pathname === '/about' || pathname==='/contact'
         ? "bg-[#221E5B]"
         : "bg-[#040037]"
     }`}
@@ -192,7 +193,18 @@ const Features = () => {
       }} 
       alt="header_img" 
     />
-  </>): (
+  </>):pathname ==='/contact'?(<>
+    <Image 
+      src={contact} 
+      style={{ 
+        width: '100%', 
+        height: '450px', 
+        borderRadius: '10px', 
+        boxShadow: '0 0 10px red' 
+      }} 
+      alt="header_img" 
+    />
+  </>) : (
     <Image 
       src={header_img} 
       style={{ 
@@ -219,7 +231,9 @@ const Features = () => {
     <p>Start streaming with your subscription now!</p>
   ) :pathname==='/about'?(
 <p>Choose your Subscription Plan Now</p>
-  ) :(
+  ) :pathname==='/contact'?(<p>
+Don’t wait – get your subscription today!
+  </p>):(
     <p>Subscribe Today And Never Miss A Moment</p>
   )
 }

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import header_img from '../../public/images/Popular-TV-Channels-and-Shows.jpg';
 import singlePlan from '../../public/images/singlePlan1.png';
+import contact from '../../public/images/contact10.png';
 import { MdArrowRight } from "react-icons/md";
 import { RiArrowDownSFill } from "react-icons/ri";
 import { PiDotOutlineFill } from "react-icons/pi"; // Importing the bullet point icon
@@ -182,20 +183,13 @@ const PopularChannels = () => {
       </ul>
     ]
   };
-//   const TVShowsDescriptions: { [key: string]: string } = {
-//     "Top Series": "Binge-watch critically acclaimed shows from the UK, USA, and across the globe.",
-//     "Trending Originals": "Explore exclusive original series and binge-worthy content.",
-//     "Reality & Lifestyle": "Get your fill of cooking competitions, travel guides, and lifestyle inspiration.",
-//     "Documentaries": "Dive into fascinating documentaries on nature, history, science, and true crime.",
-//     "Kids’ Shows": "Keep the little ones entertained with educational and fun programming tailored for kids."
-//   };
 
   const WattsappOpen = () => {
     window.open('https://wa.me/+447826176784', '_blank');
   };
 
   return (
-    <div className="bg-[#040037] pb-[60px]">
+    <div className={`${pathname==='/contact'?'bg-[#221E5B]':'bg-[#040037]'} pb-[60px]`}>
   <div className="container mx-auto px-4 pt-[60px] pb-[100px]">
     <div className="grid lg:px-10 grid-cols-1 sm:grid-cols-2 gap-4">
       <div className="col-span-1 flex flex-col justify-center items-start text-start">
@@ -281,7 +275,11 @@ const PopularChannels = () => {
       </div>
       <div className="col-span-1 flex flex-col items-center justify-center">
         {
-          pathname==='/single-plan'?<Image src={singlePlan} style={{ width: '90%', height: 'auto', borderRadius: '10px', boxShadow: '0 0 10px red' }} alt="header_img" />:<Image src={header_img} style={{ width: '100%', height: '450px',objectFit:'cover', borderRadius: '10px', boxShadow: '0 0 10px red' }} alt="header_img" />
+          pathname==='/single-plan'?(<>
+          <Image src={singlePlan} style={{ width: '90%', height: 'auto', borderRadius: '10px', boxShadow: '0 0 10px red' }} alt="header_img" />
+          </>):pathname ==='/contact'?(<>
+            <Image src={contact} style={{ width: '100%', height: '450px', borderRadius: '10px', boxShadow: '0 0 10px red' }} alt="header_img" />
+          </>):<Image src={header_img} style={{ width: '100%', height: '450px',objectFit:'cover', borderRadius: '10px', boxShadow: '0 0 10px red' }} alt="header_img" />
         }
        <a
   className="bg-[#E22D51] mt-6 text-white w-[90%] h-[60px] flex items-center justify-center cursor-pointer rounded-[30px] hover:bg-[#67CDF0]"
@@ -296,6 +294,8 @@ const PopularChannels = () => {
     <>Join today and enjoy nonstop entertainment!</>
   ) :pathname ==='/about'?(<>
   Get your Single or Friends and Family subscription plan now
+  </>):pathname==='/contact'?(<>
+    Start streaming with your subscription now!
   </>): (
     <>Join Now And Unlock Premium Content</>
   )
