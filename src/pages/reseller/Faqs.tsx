@@ -4,7 +4,8 @@ import React, { useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
 
 const Faqs = () => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null) as any;
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
   const toggleAccordion = (index: number, type: string) => {
     if (type === "single") {
       setActiveIndex(activeIndex === index ? null : index);
@@ -39,37 +40,36 @@ const Faqs = () => {
   ];
 
   const renderAccordion = (plan: typeof SinglePlan, type: string) => {
-    return plan.map((faq, index) => (
-      <div
-        key={index}
-        className={`accordion p-4 rounded-xl mb-3 transition-all ${
-          (type === "single" ? activeIndex : activeIndex - 100) === index
-            ? "bg-[#67CDF0]"
-            : "bg-[#221E5B]"
-        }`}
-      >
-        <button
-          onClick={() => toggleAccordion(index, type)}
-          className="flex items-center justify-between w-full text-left text-base font-medium text-white"
-        >
-          <h5>{faq.question}</h5>
-          {(type === "single" ? activeIndex : activeIndex - 100) === index ? (
-            <FaMinus />
-          ) : (
-            <FaPlus />
-          )}
-        </button>
+    return plan.map((faq, index) => {
+      const isActive =
+        activeIndex !== null &&
+        ((type === "single" && activeIndex === index) ||
+          (type !== "single" && activeIndex - 100 === index));
+
+      return (
         <div
-          className={`mt-2 overflow-hidden transition-all duration-500 ${
-            (type === "single" ? activeIndex : activeIndex - 100) === index
-              ? "max-h-screen"
-              : "max-h-0"
+          key={index}
+          className={`accordion p-4 rounded-xl mb-3 transition-all ${
+            isActive ? "bg-[#67CDF0]" : "bg-[#221E5B]"
           }`}
         >
-          <p className="text-white text-sm mt-2">{faq.answer}</p>
+          <button
+            onClick={() => toggleAccordion(index, type)}
+            className="flex items-center justify-between w-full text-left text-base font-medium text-white"
+          >
+            <h5>{faq.question}</h5>
+            {isActive ? <FaMinus /> : <FaPlus />}
+          </button>
+          <div
+            className={`mt-2 overflow-hidden transition-all duration-500 ${
+              isActive ? "max-h-screen" : "max-h-0"
+            }`}
+          >
+            <p className="text-white text-sm mt-2">{faq.answer}</p>
+          </div>
         </div>
-      </div>
-    ));
+      );
+    });
   };
 
   return (
@@ -83,7 +83,7 @@ const Faqs = () => {
           <div>{renderAccordion(FamilyPlan, "family")}</div>
         </div>
       </div>
-      <Devices/>
+      <Devices />
     </div>
   );
 };
