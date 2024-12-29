@@ -5,6 +5,7 @@ import Image from 'next/image';
 import header_img from '../../public/images/feature.png';
 import singlePlan from '../../public/images/singlePlan2.png';
 import familyPlan from '../../public/images/familyPlan5.png';
+import about from '../../public/images/about2.png';
 import { MdArrowRight } from "react-icons/md";
 import { RiArrowDownSFill } from "react-icons/ri";
 import { usePathname } from 'next/navigation';
@@ -59,7 +60,14 @@ const Features = () => {
     window.open('https://wa.me/+447826176784', '_blank');
   };
   return (
-    <div className={`${pathname==='/single-plan'?"bg-[#221E5B]":"bg-[#040037]"}`}>
+    <div className={`${
+      pathname === '/single-plan'
+        ? "bg-[#040037]"
+        : pathname === '/about'
+        ? "bg-[#221E5B]"
+        : "bg-[#040037]"
+    }`}
+    >
       <div className="container mx-auto px-4 pt-[60px] pb-[100px]">
         <div className="grid lg:px-10 grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="col-span-1 flex flex-col justify-center items-start text-start">
@@ -172,7 +180,19 @@ const Features = () => {
       }} 
       alt="header_img" 
     />
-  ) : (
+  ) :pathname==='/about'?(<>
+   <Image 
+      src={about} 
+      style={{ 
+        width: '100%', 
+        height: '450px', 
+       
+        borderRadius: '10px', 
+        boxShadow: '0 0 10px red' 
+      }} 
+      alt="header_img" 
+    />
+  </>): (
     <Image 
       src={header_img} 
       style={{ 
@@ -197,7 +217,9 @@ const Features = () => {
     <p>Secure your subscription and start streaming!</p>
   ) : pathname === '/friends-and-family-plan' ? (
     <p>Start streaming with your subscription now!</p>
-  ) : (
+  ) :pathname==='/about'?(
+<p>Choose your Subscription Plan Now</p>
+  ) :(
     <p>Subscribe Today And Never Miss A Moment</p>
   )
 }

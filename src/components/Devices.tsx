@@ -5,6 +5,7 @@ import devices from '../../public/images/devices.png'
 import devices1 from '../../public/images/devices1.png'
 import familyPlan from '../../public/images/familyPlan2.png'
 import reseller from '../../public/images/reseller4.png'
+import about from '../../public/images/about3.png'
 import CompaniesCarousel from './CompaniesCarousel'
 import { usePathname } from 'next/navigation'
 const Devices = () => {
@@ -65,7 +66,11 @@ const Devices = () => {
        Unlock premium streaming – subscribe now!
       </a>
  </div>
-</>): (
+</>):pathname ==='/about'?(<>
+  <div className='bg-[#FFFFFF] mt-6 lg:mt-0 flex items-center justify-center lg:w-[450px] lg:h-[450px] rounded-[10px]'>
+      <Image src={about} style={{ width: '100%', objectFit: 'cover' }} alt='img' />
+    </div>
+</>) : (
   <>
     <div className='bg-[#FFFFFF] mt-6 lg:mt-0 flex items-center justify-center lg:w-[450px] lg:h-[450px] rounded-[10px]'>
       <Image src={devices} style={{ width: '100%', objectFit: 'cover' }} alt='img' />

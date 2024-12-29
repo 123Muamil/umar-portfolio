@@ -294,7 +294,9 @@ const PopularChannels = () => {
     <>Join today and enjoy nonstop entertainment!</>
   ) : pathname === '/friends-and-family-plan' ? (
     <>Join today and enjoy nonstop entertainment!</>
-  ) : (
+  ) :pathname ==='/about'?(<>
+  Get your Single or Friends and Family subscription plan now
+  </>): (
     <>Join Now And Unlock Premium Content</>
   )
 }
