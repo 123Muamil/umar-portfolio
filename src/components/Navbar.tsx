@@ -122,13 +122,13 @@ const Navbar = () => {
             >
               Contact
             </Link>
-            <a
-              href="#"
+            <Link
+              href="/blogs"
               className={`${linkClass1('blogs')}`}
               onClick={() => handleLinkClick('blogs')}
             >
               Blogs
-            </a>
+            </Link>
             <a
               
               className="bg-[#E22D51] text-white px-4  cursor-pointer py-2 rounded-md hover:bg-[#67CDF0]"
@@ -280,13 +280,13 @@ const Navbar = () => {
     Contact
   </Link>
 
-  <a
-    href="#"
+  <Link
+    href="/blogs"
     className={`${linkClass('blogs')} text-[20px] font-bold py-4 hover:text-[#E32D51]`}
     onClick={() => handleLinkClick('blogs')}
   >
     Blogs
-  </a>
+  </Link>
 
   <a
     className="block text-white mt-2 bg-[#E22D51] px-4 py-3 cursor-pointer rounded-md hover:bg-[#67CDF0]"

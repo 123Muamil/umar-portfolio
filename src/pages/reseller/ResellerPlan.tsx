@@ -19,7 +19,7 @@ const ResellerPlan = () => {
             <div className='flex flex-col items-start justify-start ml-12'>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold'>Starter Reseller Plan
               </h2>
-              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>£ 99</h1>
+              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>$ 99</h1>
               <h1 className='text-[#FFFFFF] text-[25px] font-bold mt-4'>50 Credits</h1>
               <p className='text-[#E22D51] text-[25px] font-bold mt-4'>Up to 50 Accounts</p>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold mt-4'>3 Days Money Back Guarantee</h2>
@@ -68,7 +68,7 @@ const ResellerPlan = () => {
           <div className="bg-[#040037] rounded-lg p-4 h-full flex flex-col justify-between w-[350px] " style={{boxShadow: '0 0 10px red'}}>
             <div className='flex flex-col items-start justify-start ml-12'>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold'>Standard Reseller Plan</h2>
-              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>£ 189</h1>
+              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>$ 189</h1>
               <h1 className='text-[#FFFFFF] text-[25px] font-bold mt-4'>100 Credits</h1>
               <p className='text-[#E22D51] text-[25px] font-bold mt-4'>Up to 100 Accounts</p>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold mt-4'>3 Days Money Back Guarantee</h2>
@@ -116,7 +116,7 @@ const ResellerPlan = () => {
           <div className="bg-[#040037] rounded-lg p-4 h-full flex flex-col justify-between w-[350px] " style={{boxShadow: '0 0 10px red'}}>
             <div className='flex flex-col items-start justify-start ml-12'>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold'>Professional Reseller Plan</h2>
-              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>£ 379</h1>
+              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>$ 379</h1>
               <h1 className='text-[#FFFFFF] text-[25px] font-bold mt-4'>200 Credits</h1>
               <p className='text-[#E22D51] text-[25px] font-bold mt-4'>Up to 200 Accounts</p>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold mt-4'>3 Days Money Back Guarantee</h2>
@@ -168,7 +168,7 @@ const ResellerPlan = () => {
             <div className='flex flex-col items-start justify-start ml-12'>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold'>Advanced Reseller Plan
               </h2>
-              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>£ 949</h1>
+              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>$ 949</h1>
               <h1 className='text-[#FFFFFF] text-[25px] font-bold mt-4'>500 Credits</h1>
               <p className='text-[#E22D51] text-[25px] font-bold mt-4'>Up to 500 Accounts
 
@@ -220,7 +220,7 @@ const ResellerPlan = () => {
             <div className='flex flex-col items-start justify-start ml-12'>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold'>Business Reseller Plan
               </h2>
-              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>£ 1799</h1>
+              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>$ 1799</h1>
               <h1 className='text-[#FFFFFF] text-[25px] font-bold mt-4'>1000 Credits
               </h1>
               <p className='text-[#E22D51] text-[25px] font-bold mt-4'>Up to 1000 Accounts</p>
@@ -270,7 +270,7 @@ const ResellerPlan = () => {
             <div className='flex flex-col items-start justify-start ml-12'>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold'>Enterprise Reseller Plan
               </h2>
-              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>£ 3499</h1>
+              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>$ 3499</h1>
               <h1 className='text-[#FFFFFF] text-[25px] font-bold mt-4'>2000 Credits
               </h1>
               <p className='text-[#E22D51] text-[25px] font-bold mt-4'>Up to 2000 Accounts

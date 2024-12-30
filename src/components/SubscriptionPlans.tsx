@@ -20,7 +20,7 @@ const SubscriptionPlans = () => {
           <div className="bg-[#040037] rounded-lg p-4 h-full flex flex-col justify-between w-[350px] " style={{boxShadow: '0 0 10px red'}}>
             <div className='flex flex-col items-start justify-start ml-12'>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold'>Instant Activation</h2>
-              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>£ 15</h1>
+              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>$ 15</h1>
               <h1 className='text-[#FFFFFF] text-[25px] font-bold mt-4'>1 Month Plan</h1>
               <p className='text-[#E22D51] text-[25px] font-bold mt-4'>One Time Payment</p>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold mt-4'>3 Days Money Back Guarantee</h2>
@@ -69,7 +69,7 @@ const SubscriptionPlans = () => {
           <div className="bg-[#040037] rounded-lg p-4 h-full flex flex-col justify-between w-[350px] " style={{boxShadow: '0 0 10px red'}}>
             <div className='flex flex-col items-start justify-start ml-12'>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold'>Instant Activation</h2>
-              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>£ 30</h1>
+              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>$ 30</h1>
               <h1 className='text-[#FFFFFF] text-[25px] font-bold mt-4'>3 Month Plan</h1>
               <p className='text-[#E22D51] text-[25px] font-bold mt-4'>One Time Payment</p>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold mt-4'>3 Days Money Back Guarantee</h2>
@@ -117,7 +117,7 @@ const SubscriptionPlans = () => {
           <div className="bg-[#040037] rounded-lg p-4 h-full flex flex-col justify-between w-[350px] " style={{boxShadow: '0 0 10px red'}}>
             <div className='flex flex-col items-start justify-start ml-12'>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold'>Instant Activation</h2>
-              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>£ 42</h1>
+              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>$ 42</h1>
               <h1 className='text-[#FFFFFF] text-[25px] font-bold mt-4'>6 Month Plan</h1>
               <p className='text-[#E22D51] text-[25px] font-bold mt-4'>One Time Payment</p>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold mt-4'>3 Days Money Back Guarantee</h2>
@@ -168,7 +168,7 @@ const SubscriptionPlans = () => {
           <div className="bg-[#040037] rounded-lg p-4 h-full flex flex-col justify-between w-[350px] " style={{boxShadow: '0 0 10px red'}}>
             <div className='flex flex-col items-start justify-start ml-12'>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold'>Instant Activation</h2>
-              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>£ 50</h1>
+              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>$ 50</h1>
               <h1 className='text-[#FFFFFF] text-[25px] font-bold mt-4'>9 Month Plan</h1>
               <p className='text-[#E22D51] text-[25px] font-bold mt-4'>One Time Payment</p>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold mt-4'>3 Days Money Back Guarantee</h2>
@@ -217,7 +217,7 @@ const SubscriptionPlans = () => {
           <div className="bg-[#040037] rounded-lg p-4 h-full flex flex-col justify-between w-[350px] " style={{boxShadow: '0 0 10px red'}}>
             <div className='flex flex-col items-start justify-start ml-12'>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold'>Instant Activation</h2>
-              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>£ 60</h1>
+              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>$ 60</h1>
               <h1 className='text-[#FFFFFF] text-[25px] font-bold mt-4'>1 Year Plan</h1>
               <p className='text-[#E22D51] text-[25px] font-bold mt-4'>One Time Payment</p>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold mt-4'>7 Days Money Back Guarantee</h2>
@@ -265,7 +265,7 @@ const SubscriptionPlans = () => {
           <div className="bg-[#040037] rounded-lg p-4 h-full flex flex-col justify-between w-[350px] " style={{boxShadow: '0 0 10px red'}}>
             <div className='flex flex-col items-start justify-start ml-12'>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold'>Instant Activation</h2>
-              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>£ 115</h1>
+              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>$ 115</h1>
               <h1 className='text-[#FFFFFF] text-[25px] font-bold mt-4'>2 Year Plan</h1>
               <p className='text-[#E22D51] text-[25px] font-bold mt-4'>One Time Payment</p>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold mt-4'>14 Days Money Back Guarantee</h2>
@@ -316,7 +316,7 @@ const SubscriptionPlans = () => {
           <div className="bg-[#040037] rounded-lg p-4 h-full flex flex-col justify-between w-[350px] " style={{boxShadow: '0 0 10px red'}}>
             <div className='flex flex-col items-start justify-start ml-12'>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold'>Instant Activation</h2>
-              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>£ 160</h1>
+              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>$ 160</h1>
               <h1 className='text-[#FFFFFF] text-[25px] font-bold mt-4'>3 Years Plan</h1>
               <p className='text-[#E22D51] text-[25px] font-bold mt-4'>One Time Payment</p>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold mt-4'>14 Days Money Back Guarantee</h2>
@@ -365,7 +365,7 @@ const SubscriptionPlans = () => {
           <div className="bg-[#040037] rounded-lg p-4 h-full flex flex-col justify-between w-[350px] " style={{boxShadow: '0 0 10px red'}}>
             <div className='flex flex-col items-start justify-start ml-12'>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold'>Instant Activation</h2>
-              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>£ 210</h1>
+              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>$ 210</h1>
               <h1 className='text-[#FFFFFF] text-[25px] font-bold mt-4'>4 Years Plan</h1>
               <p className='text-[#E22D51] text-[25px] font-bold mt-4'>One Time Payment</p>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold mt-4'>14 Days Money Back Guarantee</h2>
@@ -413,7 +413,7 @@ const SubscriptionPlans = () => {
           <div className="bg-[#040037] rounded-lg p-4 h-full flex flex-col justify-between w-[350px] " style={{boxShadow: '0 0 10px red'}}>
             <div className='flex flex-col items-start justify-start ml-12'>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold'>Instant Activation</h2>
-              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>£ 250</h1>
+              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>$ 250</h1>
               <h1 className='text-[#FFFFFF] text-[25px] font-bold mt-4'>5 Years Plan</h1>
               <p className='text-[#E22D51] text-[25px] font-bold mt-4'>One Time Payment</p>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold mt-4'>14 Days Money Back Guarantee</h2>
@@ -469,7 +469,7 @@ const SubscriptionPlans = () => {
           <div className="bg-[#040037] rounded-lg p-4 h-full flex flex-col justify-between w-[350px] " style={{boxShadow: '0 0 10px red'}}>
             <div className='flex flex-col items-start justify-start ml-12'>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold'>2 Devices Premium</h2>
-              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>£ 110</h1>
+              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>$ 110</h1>
               <h1 className='text-[#FFFFFF] text-[25px] font-bold mt-4'>1 Year prem plan</h1>
               <p className='text-[#E22D51] text-[25px] font-bold mt-4'>One Time Payment</p>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold mt-4'>7 Days Money Back Guarantee</h2>
@@ -518,7 +518,7 @@ const SubscriptionPlans = () => {
           <div className="bg-[#040037] rounded-lg p-4 h-full flex flex-col justify-between w-[350px] " style={{boxShadow: '0 0 10px red'}}>
             <div className='flex flex-col items-start justify-start ml-12'>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold'>3 Devices Premium</h2>
-              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>£ 150</h1>
+              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>$ 150</h1>
               <h1 className='text-[#FFFFFF] text-[25px] font-bold mt-4'>1 Year prem plan</h1>
               <p className='text-[#E22D51] text-[25px] font-bold mt-4'>One Time Payment</p>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold mt-4'>7 Days Money Back Guarantee</h2>
@@ -566,7 +566,7 @@ const SubscriptionPlans = () => {
           <div className="bg-[#040037] rounded-lg p-4 h-full flex flex-col justify-between w-[350px] " style={{boxShadow: '0 0 10px red'}}>
             <div className='flex flex-col items-start justify-start ml-12'>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold'>4 Devices Premium</h2>
-              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>£ 180</h1>
+              <h1 className='text-[#E22D51] text-[25px] font-bold mt-4'>$ 180</h1>
               <h1 className='text-[#FFFFFF] text-[25px] font-bold mt-4'>1 Year prem plan</h1>
               <p className='text-[#E22D51] text-[25px] font-bold mt-4'>One Time Payment</p>
               <h2 className='text-[#FFFFFF] text-[18px] font-bold mt-4'>7 Days Money Back Guarantee</h2>
