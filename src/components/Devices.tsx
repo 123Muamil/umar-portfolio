@@ -7,6 +7,7 @@ import familyPlan from '../../public/images/familyPlan2.png'
 import reseller from '../../public/images/reseller4.png'
 import about from '../../public/images/about3.png'
 import contact from '../../public/images/contact9.png'
+import iptv from '../../public/images/iptv3.png'
 import CompaniesCarousel from './CompaniesCarousel'
 import { usePathname } from 'next/navigation'
 const Devices = () => {
@@ -75,6 +76,18 @@ const Devices = () => {
   <div className='flex flex-col'>
  <div className='bg-[#FFFFFF] mt-6 lg:mt-0 flex items-center justify-center lg:w-[450px] lg:h-[450px] rounded-[10px]'>
       <Image src={contact} style={{ width: '100%', objectFit: 'cover' }} alt='img' />
+    </div>
+    <a
+        className="bg-[#E22D51] mt-6 text-white w-full h-[50px] flex items-center justify-center cursor-pointer rounded-[5px] hover:bg-[#67CDF0]"
+        onClick={WattsappOpen}
+      >
+       Unlock premium streaming – subscribe now!
+      </a>
+ </div>
+</>):pathname==='/iptvs'?(<>
+  <div className='flex flex-col'>
+ <div className='bg-[#FFFFFF] mt-6 lg:mt-0 flex items-center justify-center lg:w-[450px] lg:h-[450px] rounded-[10px]'>
+      <Image src={iptv} style={{ width: '100%', objectFit: 'cover' }} alt='img' />
     </div>
     <a
         className="bg-[#E22D51] mt-6 text-white w-full h-[50px] flex items-center justify-center cursor-pointer rounded-[5px] hover:bg-[#67CDF0]"

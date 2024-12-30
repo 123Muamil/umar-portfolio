@@ -101,13 +101,13 @@ const Navbar = () => {
             >
               Guide
             </Link>
-            <a
-              href="#"
+            <Link
+              href="/iptvs"
               className={`${linkClass1('iptvs')}`}
               onClick={() => handleLinkClick('iptvs')}
             >
               IPTVs
-            </a>
+            </Link>
             <Link
               href="/about"
               className={`${linkClass1('about')}`}
@@ -256,13 +256,13 @@ const Navbar = () => {
     Guide
   </Link>
 
-  <a
-    href="#"
+  <Link
+    href="/iptvs"
     className={`${linkClass('iptvs')}  text-[20px] font-bold font-bold py-4 hover:text-[#E32D51]`}
     onClick={() => handleLinkClick('iptvs')}
   >
     IPTVs
-  </a>
+  </Link>
 
   <Link
     href="/about"
