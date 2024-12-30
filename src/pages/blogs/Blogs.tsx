@@ -1,36 +1,9 @@
-"use client";
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import reseller from '../../../public/images/reseller2.png';
 import bloger from '../../../public/images/bloger.png';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 const Blogs = () => {
-  const [openIndexes1, setOpenIndexes1] = useState<number[]>([]);
-  const MoviesContent: string[] = [
-    "Video On Demand (VOD)",
-    "Money-Back Guarantee",
-  ];
-
-  const toggleText = (
-    index: number,
-    setOpenIndexes: React.Dispatch<React.SetStateAction<number[]>>,
-    openIndexes: number[]
-  ): void => {
-    if (openIndexes.includes(index)) {
-      setOpenIndexes(openIndexes.filter((i) => i !== index));
-    } else {
-      setOpenIndexes([...openIndexes, index]);
-    }
-  };
-  
-  const movieDescriptions: { [key: string]: string } = {
-    "Latest Blockbusters": "Stay ahead of the curve with the newest releases in action, thriller, drama, comedy, and sci-fi.",
-    "Classic Favorites": "Relive the golden era of cinema with iconic films that never get old.",
-    "Family Films": "Enjoy heartwarming tales and animated adventures perfect for all ages.",
-    "Global Cinema": "Immerse yourself in award-winning films from Hollywood, Bollywood, Nollywood, and beyond.",
-    "Genre Favorites": "    1. Action-packed thrillers 2. Romantic comedies 3. Spine-chilling horror 4. Inspiring biographies"
-  };
-  
   return (
     <div className="bg-[#08043C]">
       <div className="container mx-auto px-4 pt-[60px] pb-[100px]">
